@@ -1,0 +1,49 @@
+.body{
+    height: 100vh;
+}
+/* Kvadrato animacija*/
+.square{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: judejimas_kvadratu;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+
+.square:hover {
+    animation-play-state: paused;
+}
+
+@keyframes judejimas_kvadratu {
+0% {
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+
+25% {
+ margin-left: 300px;
+ margin-top:0px;
+}
+
+50% {
+    margin-left: 300px;
+    margin-top:300px;
+  }
+
+75% {
+     
+      margin-left: 0px;
+      margin-top:300px;
+}
+
+100% {
+     margin-left: 0px;
+     margin-top: 0px;
+}
+}
